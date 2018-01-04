@@ -1,0 +1,27 @@
+<html>
+<head>
+    <title>Object</title>
+</head>
+
+<body>
+    <script>
+        fucntion student(name,age) {
+            this.name=name;
+            this.age=age;
+            this.study=function() {
+                alert("studying");
+            };
+            this.eat=function() {
+                alert("eating");
+            };
+        }
+        var student1 = new student('Tom','19');
+        var student2 = new student('Jack','20');
+        var x = student1.name;
+        var y = student1.age;
+        document.write(x);
+        document.write(y);
+        student1.study();
+    </script>
+</body>
+</html>
